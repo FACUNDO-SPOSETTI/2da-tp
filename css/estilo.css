@@ -1,0 +1,238 @@
+
+/*logo y nombre de la pagina*/
+.barrainicio{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(180, 53, 53);
+  padding: 10px;
+}
+.logo{
+  height: 70px;
+  margin-right: 10px;
+}
+.logo-barra{
+  display: flex;
+  align-items: center;
+}
+.titulobarra{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 25px;
+ color: rgb(197, 193, 193);
+ margin: 10px;
+ padding: 10px;
+}
+/*propiedades de la barra y el boton busqueda*/
+.botones-barrabusqueda{
+  flex-grow: 1;
+  margin: 0 10px;
+}
+form{
+  display: flex;
+  align-items: center;
+  width: 1300px;
+}
+button[ type="submit"]{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(87, 14, 14);
+  color: white;
+  font-size: 16px;
+  margin-left: 10px ;
+}
+.busqueda {
+ padding: 10px;
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
+  flex-grow: 1;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+
+}
+/*propiedades del botos buscar*/
+.botonprueba{
+padding: 10px;
+border-bottom: 15px;
+margin: 15px;
+box-shadow: 6px 6px 6px black;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+
+}
+.botonprueba:hover{
+
+  font-weight: bold;
+  transform: scale(1.01) translate(1px) ;
+  transition: 0.3s;
+ 
+}
+/*el apartado del menu*/
+.menu{
+  display: flex;
+  align-items: center;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  width: 80px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+
+
+}
+.menu-item:hover{
+  transform: scale(1.18);
+  transition: 0.3s;
+}
+/*termina lo que es la barra de busqueda con el menu y logo*/
+/*grilla que contiene fotos y informacion*/
+.grid-padre {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 200px 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 1px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "peli1 peli2 peli3"
+    "peli4 peli5 peli6"
+    "comentario comentario comentario";
+}
+
+.titulo { grid-area: titulo; }
+
+.peli1 { grid-area: peli1; }
+
+.peli2 { grid-area: peli2; }
+
+.peli3 { grid-area: peli3; }
+
+.peli4 { grid-area: peli4; }
+
+.peli5 { grid-area: peli5; }
+
+.peli6 { grid-area: peli6; }
+
+.comentario { grid-area: comentario; }
+.tamaño{
+  height: 250px ;
+  width: 250px ;
+  padding: 10px;
+  margin: 0px;
+}
+.titulo{
+  display: flex;
+  align-items: centers;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100px;
+}
+.lugar{
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.organizar{
+  display: flex;
+  flex-direction: column;
+}
+.tituloo{
+  height: 50px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ver-mas{
+  width: 200px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 15px;
+ box-shadow: 7px 7px 7px gray;
+   animation-name: agrandar ;
+   animation-iteration-count: infinite;
+   animation-duration: 0.3s ;
+}
+.ver-mas:hover{
+  background-color:white;
+  color: black;
+  font-weight: bold;
+  transform: scale(1.05);
+  transition: .4s;
+}
+.comentario{
+  height: 250px;
+  background-color: wheat;
+  border: 2px solid black;
+  padding: 10px;
+  position: absolute;
+  top: 1200px;
+  width: 1850px;
+  display: flex;
+}
+.acomodar{
+  display: flex;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+}
+.sec{
+  padding: 10px;
+  margin: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.color{
+ background-color: rgb(45, 54, 54);
+}
+/*pagina de peliculas*/
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.25fr 1.25fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "peliculas peliculas peliculas"
+    "pelicula1 pelicula2 pelicula3"
+    "pelicula4 pelicula5 pelicula6";
+}
+
+.peliculas { grid-area: peliculas; 
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 70px;
+}
+
+.pelicula1 { grid-area: pelicula1;
+background-color: yellow; }
+
+.pelicula2 { grid-area: pelicula2; 
+background-color:red;}
+
+.pelicula3 { grid-area: pelicula3; 
+background-color: brown;}
+
+.pelicula4 { grid-area: pelicula4; background-color: black;}
+
+.pelicula5 { grid-area: pelicula5; background-color: violet; }
+
+.pelicula6 { grid-area: pelicula6; background-color: tomato; }
