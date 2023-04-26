@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
@@ -26,6 +27,43 @@
           <a href="anime.html" class="menu-item anime"> anime</a>
         </section>
       </header>
-     
+     <main>
+        <div class="comentariocontainer">
+            <div class="hace-un-comentario"><h2 class="titulo animate__animated animate__pulse">dejano tu comentario y sujerencia</h2></div>
+            <div class="sectio"> 
+                <form action="submit-comment.php" method="post" class="formulario">
+                    <div>
+                      <label for="name">Nombre:</label>
+                      <input type="text" id="name" name="name" class="separar" required>
+                    </div>
+                    <div>
+                      <label for="email">Correo electrónico:</label>
+                      <input type="email" id="email" name="email" class="separar" required>
+                    </div>
+                    <div>
+                      <label for="message">Mensaje:</label>
+                      <textarea id="message" name="message" rows="4" class="separar" required></textarea>
+                    </div>
+                    <div>
+                      <button type="submit">Enviar comentario</button>
+                    </div>
+                  </form>
+            </div>
+            <div class="proximamente"><img src="../imagen/prox1.jpg" alt="jhw4" class="tamaño">
+                <div class="pro">
+                  <h2>jhon wick 4</h2>
+                  <p>fehca de extreno el 23/5/2023 </p>
+                  <button>ver trailer</button>
+               </div>
+            </div>
+            <div class="proximamente-2"><img src="../imagen/prox2.jpg" alt="huncharte" class="tamaño">
+                <div class="pro">
+                    <h2>huncharte</h2>
+                    <p>fehca de extreno el 17/5/2023</p>
+                    <button>ver trailer</button>
+                </div>
+            </div>
+          </div>
+     </main>
 </body>
 </html>
