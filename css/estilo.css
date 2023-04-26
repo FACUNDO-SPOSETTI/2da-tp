@@ -1,4 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Playfair+Display&family=Raleway:wght@200&display=swap');
+*{
+  font-family: 'Fasthand', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+font-size: 15px;
+}
 /*logo y nombre de la pagina*/
 .barrainicio{
   display: flex;
@@ -375,18 +381,18 @@ flex-direction: row; }
 }
 
 .hace-un-comentario { grid-area: hace-un-comentario; 
-background-color: yellowgreen; }
+ }
 
 .sectio { grid-area: sectio;
-background-color: violet; }
+; }
 
 .proximamente { grid-area: proximamente;
-background-color: brown;
+
 display: flex;
 flex-direction: column; }
 
 .proximamente-2 { grid-area: proximamente-2;
-background-color: tomato; }
+ }
 .formulario{
   display: flex;
   flex-direction: column;
@@ -405,7 +411,7 @@ background-color: tomato; }
   justify-content: center;
   align-items: center;
 }
-.comen-container {  display: grid;
+.coment-container {  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-auto-columns: 1fr;
@@ -419,10 +425,17 @@ background-color: tomato; }
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center; }
+align-items: center; 
+background-color: wheat}
 
 .dejar { grid-area: dejar;
   display: flex;
   flex-direction: column;
 justify-content: center;
-align-items: center; }
+align-items: center;
+background-color: wheat }
+
+.grandee{
+  font-size: 25px;
+transform: scale(1.1);
+}
