@@ -223,16 +223,128 @@ height: 70px;
 }
 
 .pelicula1 { grid-area: pelicula1;
-background-color: yellow; }
+
+display: flex;
+flex-direction: row;
+
+ }
 
 .pelicula2 { grid-area: pelicula2; 
-background-color:red;}
+
+display: flex;
+flex-direction: row;}
 
 .pelicula3 { grid-area: pelicula3; 
-background-color: brown;}
 
-.pelicula4 { grid-area: pelicula4; background-color: black;}
+display: flex;
+flex-direction: row;
+}
 
-.pelicula5 { grid-area: pelicula5; background-color: violet; }
+.pelicula4 { grid-area: pelicula4;
+display: flex;
+flex-direction: row;}
 
-.pelicula6 { grid-area: pelicula6; background-color: tomato; }
+.pelicula5 { grid-area: pelicula5;  
+display: flex;
+flex-direction: row;
+}
+
+.pelicula6 { grid-area: pelicula6; 
+display: flex;
+flex-direction: row;
+ }
+
+.mejora{
+  margin: 0px;
+  padding: opx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*series*/
+.seires-container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.25fr 1.25fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "seires seires seires"
+    "serie1 serie2 serie3"
+    "serie4 serie5 serie6";
+}
+
+.seires { grid-area: seires; 
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.serie1 { grid-area: serie1; 
+display: flex;
+flex-direction: row;}
+
+.serie2 { grid-area: serie2;
+display: flex;
+flex-direction: row; }
+
+.serie3 { grid-area: serie3;
+
+display: flex;
+flex-direction: row; }
+
+.serie4 { grid-area: serie4;
+display: flex;
+flex-direction: row; }
+
+.serie5 { grid-area: serie5; 
+display: flex;
+flex-direction: row;}
+
+.serie6 { grid-area: serie6;
+display: flex;
+flex-direction: row; }
+/*anime*/
+.anime-container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.25fr 1.25fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "anime anime anime"
+    "anime1 anime2 anime3"
+    "anime4 anime5 anime6";
+}
+
+.anime { grid-area: anime;
+display: flex;
+justify-content: center;
+align-items: center;
+ }
+
+.anime1 { grid-area: anime1;
+  display: flex;
+  flex-direction: row;
+ }
+
+.anime2 { grid-area: anime2;
+  display: flex;
+  flex-direction: row;
+ }
+
+.anime3 { grid-area: anime3;
+display: flex;
+flex-direction: row; }
+
+.anime4 { grid-area: anime4;
+display: flex;
+flex-direction: row; }
+
+.anime5 { grid-area: anime5;
+display: flex;
+flex-direction: row; }
+
+.anime6 { grid-area: anime6;
+display: flex;
+flex-direction: row; }
